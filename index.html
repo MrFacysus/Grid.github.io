@@ -1,0 +1,37 @@
+<!DOCTYPE html>	
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Grid Showcase</title>
+        <script src="logic.js"></script>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+            }
+            .holder{
+                width: 100vw;
+                height: 100vh;
+                display: grid;
+                grid-template-columns: repeat(var(--cols), 1fr);
+                grid-template-rows: repeat(var(--rows), 1fr);
+            }
+            .tile{
+                background-color: #222;
+                border: 1px solid black;
+                border-radius: 0px;
+                color: black;
+                font-size: 1.5em;
+                font-weight: bold;
+                text-align: center;
+                padding: 0px;
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="tiles" class="holder">
+       </div>
+    </body>
+</html>
